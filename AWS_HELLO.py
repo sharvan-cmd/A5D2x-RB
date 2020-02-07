@@ -43,7 +43,8 @@ client.loop_start()
 # Publish to the same topic in a loop forever
 
 while True:
-
+  loopCount = 1
+  
   client.publish("elmeasure", "Hello_world" + str(loopCount) + "  " + , 1)
   loopCount += 1                                                                                                                                                    
   sleep(5)                      
